@@ -1,10 +1,8 @@
 #include<stdio.h>
 int main(){
-    int arr[100], i, n;
+    int arr[100],i, n, sum= 0;
     int *ptr;
-    float  avg, sum= 0;
-
-    printf("Enter the numbers of element : ");
+    printf("Enter the Numbers of element : ");
     scanf("%d",&n);
 
     printf("Enter the array element : ");
@@ -12,11 +10,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     ptr = arr;
-    
     for(i=0; i<n; i++){
-        sum+=*(ptr + i);
+        sum = sum + *(ptr + i);
     }
-    avg = sum/n;
-    printf("Average : %.2f",avg);
+    printf("sum = %d",sum);
 
 }
