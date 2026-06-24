@@ -15,16 +15,16 @@ int main(){
         cin>>x;
         v.push_back(x);
     }
-    int max = v[0];
+    int min = v[0];
 
     for(int i=1; i<v.size(); i++){
-         if(v[i]>max)
+         if(v[i]<min)
         {
-        max = v[i];
+        min = v[i];
         }
 
     }
    
 
-cout<<"The Maximum Is : "<<max;
+cout<<"The Minimum is : "<<min;
 }
